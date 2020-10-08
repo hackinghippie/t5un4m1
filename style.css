@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FFF;
+    animation: 10000ms ease-in-out infinite color-change;
+}
+
+.content {
+    position: relative;
+}
+
+.content h2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 15em;
+}
+
+.content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 5px #FFF;
+}
+
+.content h2:nth-child(2) {
+    color: #000;
+    animation: animate 2s ease-in-out infinite;
+}
+
+.content h2:nth-child(3) {
+    color: #FFF;
+    animation: animate2 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        clip-path: circle(15% at 0 50%);
+    }
+
+    50%{
+        clip-path: circle(15% at 100% 50%);
+    }
+
+}
+
+@keyframes animate2 {
+    0%, 100% {
+        clip-path: circle(15% at 100% 50%);
+    }
+
+    50%{
+        clip-path: circle(15% at 0% 50%);
+    }
+
+}
+
+@keyframes color-change {
+  0% {
+    background-color: white;
+  }
+  20% {
+    background-color: pink;
+  }
+  40% {
+    background-color: violet;
+  }
+  60% {
+    background-color: purple;
+  }
+  80% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
