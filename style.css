@@ -28,17 +28,17 @@ body {
 
 .content h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 5px #FFF;
+    -webkit-text-stroke: 5px;
 }
 
 .content h2:nth-child(2) {
     color: #000;
-    animation: animate 2s ease-in-out infinite;
+    animation: animate 3s ease-in-out infinite;
 }
 
 .content h2:nth-child(3) {
     color: #FFF;
-    animation: animate2 2s ease-in-out infinite;
+    animation: animate2 3s ease-in-out infinite;
 }
 
 @keyframes animate {
@@ -68,17 +68,21 @@ body {
     background-color: white;
   }
   20% {
-    background-color: pink;
+    background-color: lightblue;
   }
   40% {
-    background-color: violet;
+    background-color: grey;
   }
   60% {
-    background-color: purple;
+    background-color: black;
   }
   80% {
-    background-color: black;
+    background-color: grey;
+  }
+  90% {
+    background-color: pink;
   }
   100% {
     background-color: white;
   }
+}
